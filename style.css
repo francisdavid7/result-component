@@ -1,0 +1,278 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: poppins;
+}
+
+html {
+   font-size: 65.7%;
+}
+
+body {
+   display: grid;
+   place-content: center;
+}
+
+.table {
+   border: 2px solid black;
+   padding: 10px;
+}
+
+.table .row1 {
+   display: flex;
+   border-bottom: 1px solid black;
+}
+
+.table .row1 .img {
+   padding: 5px;
+}
+
+.table .row1 .img:first-child {
+   border-right: 1px solid black;
+}
+
+.table .row1 .img:first-child img {
+   width: 130px;
+}
+.table .row1 .img:last-child img {
+   width: 80px;
+   transform: translateY(-10px) translateX(-10px);
+}
+
+.table .row1 .img:last-child {
+   border-left: 1px solid black;
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-end;
+}
+
+.table .row1 .img:last-child h3 {
+   font-weight: bolder;
+   font-size: 20px;
+}
+
+.table .row1 .img:last-child h3 img {
+   width: 18px;
+   transform: none;
+   margin-bottom: -8px;
+}
+
+.table .row1 .text {
+   width: 500px;
+   padding: 0 10px;
+   text-align: center;
+   line-height: 1.8;
+}
+
+.table .row1 .text h1 {
+   font-weight: bold;
+   font-size: 25px;
+}
+
+.table .row1 .text p {
+   font-size: 14px;
+}
+
+.row2 {
+   text-align: center;
+   border-bottom: 1px solid black;
+}
+
+.row2 h1 {
+   font-weight: bold;
+   font-size: 25px;
+}
+
+.row2 span {
+   font-size: 14px;
+   padding: 0 8px;
+}
+
+.row2 span:first-child {
+   border-right: 1px solid black;
+}
+
+.row2 span:last-child {
+   border-left: 1px solid black;
+}
+
+.row3 {
+   display: flex;
+   padding: 0 5px;
+   padding-top: 5px;
+   border-bottom: 1px solid black;
+   margin-bottom: 5px;
+}
+
+.row3 .text {
+   width: 100%;
+   font-size: 15px;
+}
+
+.row3 .text:first-child {
+   border-right: 1px solid black;
+}
+
+.row3 .text:last-child {
+   border-left: 1px solid black;
+}
+
+table {
+   border-collapse: collapse;
+}
+
+.f-row {
+   height: 200px;
+}
+
+.f-row th {
+   width: 40px;
+   writing-mode: vertical-lr;
+   transform: rotateX(190deg) rotateY(190deg);
+   text-align: center;
+   padding-left: 5px;
+}
+
+.f-row th:first-child {
+   writing-mode:initial;
+   transform: none;
+}
+
+.main-tabe td {
+   padding: 10px;
+   font-size: 13px;
+}
+
+.main-tabe th, td {
+   border: 2px solid black;
+   font-weight: 600;
+}
+
+.f-row .width {
+   width: 200px;
+   text-align: left;
+}
+
+.tabe-wrap {
+   display: flex;
+   flex-wrap: wrap;
+   align-items: flex-start;
+   gap: 10px;
+   border-bottom: 1px solid black;
+}
+
+.tabe-wrap .side-tabe {
+   width: 200px;
+   margin-top: 10px;
+}
+
+.tabe-wrap .side-tabe table {
+   width: 100%;
+   margin-bottom: 10px;
+}
+
+.side-tabe-table1 {
+   height: 50vh;
+}
+
+.side-tabe-table2 {
+   height: 28.5vh;
+}
+
+.tabe-wrap .side-tabe table th {
+   padding: 5px;
+   font-size: 13px;
+}
+
+.tabe-wrap .side-tabe table th:nth-child(odd) {
+   text-align: left;
+   padding-left: 10px;
+}
+
+.tabe-wrap .side-tabe table:last-child {
+   margin-bottom: 0;
+}
+
+.tabe-wrap .side-tabe table:last-child th:nth-child(even) {
+   text-align: left;
+}
+
+.footer {
+   display: flex;
+   flex-wrap: wrap;
+}
+
+.footer .footer-tabe {
+   border-right: 1px solid black;
+}
+
+.footer table {
+   width: 539px;
+   border-color: black;
+}
+
+.footer table th, td {
+   padding: 5px;
+   font-size: 12px;
+}
+
+.footer span {
+   font-size: 13px;
+   font-weight: 600;
+   margin: 5px;
+}
+
+/* Main Footer */
+footer table td {
+   border: 0;
+   font-size: 14px;
+}
+
+footer table th {
+   font-weight: bolder;
+   font-size: 14px;
+   text-transform: lowercase;
+   text-decoration: underline;
+}
+
+footer table th::first-letter {
+   text-transform: uppercase;
+}
+
+footer .footer-text {
+   font-size: 13px;
+   text-align: center;
+   border-top: 1px solid black;
+   padding-top: 5px;
+}
+
+@media (max-width: 710px) {
+   .table {
+      min-width: 100%;
+   }
+
+   .table .row1 {
+      align-items: center;
+   }
+
+   .tabe-wrap .side-tabe {
+      width: 100%;
+   }
+
+   .footer .footer-tabe {
+      border: 0;
+      border-bottom: 1px solid black;
+      padding-bottom: 20px;
+      width: 100%;
+   }
+
+   .footer span {
+      display: block;
+      height: 50px;
+   }
+
+   .footer table {
+      width: 100%;
+   }
+}
